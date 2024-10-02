@@ -29,6 +29,7 @@ Rodas apropiadas para os 2 motores DC, e uma rodinha giratória
 
 
 ETAPAS:
+
 1-Montagem do Carrinho: Para isso, basta montar um carrinho como se fosse um carrinho básico com módulo bluetooth, segue o link: https://www.youtube.com/watch?v=OornqssB-dU (OBS: No vídeo a alimentação está sendo apenas usada uma pilha, nesse carrinho basta usar as 4 pilhas AA no suporte para alimentar a Ponte-H e a bateira 9v para alimentar o arduíno.
 
 2-Montagem do código no arduíno que já está arquivado no repositório
