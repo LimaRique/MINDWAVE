@@ -41,6 +41,34 @@ OBS: CASO O CARRINHO APENAS GIRE E NÃO ANDE PARA FRENTE, INVERTA A CONECÇÃO D
 
 
 Este projeto foi fruto de um trabalho árduo do projeto de uma feira cultural de escola técnica, aproveitem! 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OBJECTIVE:
+This project aims to develop a Bluetooth-controlled car whose movement is based on brainwave signals. Using an Arduino as the main controller, the car moves according to the received brain activity data, adjusting its movement based on these signals, where, when concentration (brain activity) exceeds a predetermined limit, the car moves. The goal of the project is to create a mind-machine interface, allowing the user to directly influence the car's behavior through their brain activity levels.
+
+REQUIRED ITEMS:
+Arduino Uno (or another compatible model)
+Bluetooth HC-05 module (for communication with the device)
+L298N H-Bridge (to control the motors)
+2 DC Motors
+Protoboard
+Power supply (for the motors and Arduino)
+Jumper wires, including male/female (for connections)
+Brainwave measurement device (in this project, the Neurosky MINDWAVE was used)
+9V battery and connector for Arduino
+4 AA batteries and holder
+Car chassis (can be improvised with MDF)
+Suitable wheels for the 2 DC motors and a swivel caster wheel
+STEPS:
+Car Assembly: Simply assemble a basic Bluetooth-controlled car; here’s a link to a video tutorial: https://www.youtube.com/watch?v=OornqssB-dU (Note: In the video, the power supply is a single battery. For this project, use the 4 AA batteries in the holder to power the H-Bridge and the 9V battery to power the Arduino.)
+
+Upload the Code to the Arduino: The code is already archived in the repository.
+
+Pairing the Bluetooth Module with MindWave: Use the code named "PAIRING"; here’s the link for pairing: https://www.youtube.com/watch?v=uKK5_U6l27E (Note: When uploading the code to the Arduino and testing the AT commands, disconnect the Bluetooth module before powering the Arduino, then reconnect it, inverting the RX and TX pins. Do not use pins 10 and 11 as shown in the video; use the inverted RX and TX pins. (Note: You’ll know it's connected when the AT commands return "OK" and when the module blinks twice at intervals of about 3 seconds.)
+
+Upload the Car Control Code: After testing the AT commands, upload the car code to the Arduino, and your project will be ready.
+
+Note: If the car only spins and doesn’t move forward, invert the motor connections with the H-Bridge. If one motor is faster than the other, adjust the code to tweak each motor's speed until they are balanced.
+This project is the result of hard work for a technical school's cultural fair. Enjoy!
 
  
 
